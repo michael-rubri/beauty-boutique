@@ -104,12 +104,15 @@ import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
 
 type GalleryItem = { src: string; alt: string; }
 
-const heroImage = '/src/assets/estetica_avanzata/epilazione_laser/EpilazioneLaserIntro.jpg';
+import heroImage from '/src/assets/estetica_avanzata/epilazione_laser/EpilazioneLaserIntro.jpg';
 const heroAlt = 'Procedura epilazione laser';
 
+import EpilazioneLaser1 from '/src/assets/estetica_avanzata/epilazione_laser/EpilazioneLaser1.jpeg'
+import EpilazioneLaser2 from '/src/assets/estetica_avanzata/epilazione_laser/EpilazioneLaser2.jpeg'
+
 const gallery: GalleryItem[] = [
-  { src: '/src/assets/estetica_avanzata/epilazione_laser/EpilazioneLaser1.jpeg', alt: 'Epilazione 1' },
-  { src: '/src/assets/estetica_avanzata/epilazione_laser/EpilazioneLaser2.jpeg', alt: 'Epilazione 2' }
+  { src: EpilazioneLaser1, alt: 'Epilazione 1' },
+  { src: EpilazioneLaser2, alt: 'Epilazione 2' }
 ];
 
 const lightboxOpen = ref(false);

@@ -117,21 +117,33 @@ import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
 
 type GalleryItem = { src: string; alt: string; }
 
-const heroImage = '/src/assets/estetica_avanzata/trattamenti_viso_avanzati/TrattamentiVisoAvanzatiIntro.jpg';
+import heroImage from '/src/assets/estetica_avanzata/trattamenti_viso_avanzati/TrattamentiVisoAvanzatiIntro.jpg';
 const heroAlt = 'Procedura trattamenti viso avanzati';
 
+import TrattamentiVisoAvanzati1 from '/src/assets/estetica_avanzata/trattamenti_viso_avanzati/TrattamentiVisoAvanzati1.jpeg'
+import TrattamentiVisoAvanzati2 from '/src/assets/estetica_avanzata/trattamenti_viso_avanzati/TrattamentiVisoAvanzati2.jpeg'
+import TrattamentiVisoAvanzati3 from '/src/assets/estetica_avanzata/trattamenti_viso_avanzati/TrattamentiVisoAvanzati3.jpeg'
+import TrattamentiVisoAvanzati4 from '/src/assets/estetica_avanzata/trattamenti_viso_avanzati/TrattamentiVisoAvanzati4.jpeg'
+import TrattamentiVisoAvanzati5 from '/src/assets/estetica_avanzata/trattamenti_viso_avanzati/TrattamentiVisoAvanzati5.jpeg'
+import TrattamentiVisoAvanzati6 from '/src/assets/estetica_avanzata/trattamenti_viso_avanzati/TrattamentiVisoAvanzati6.jpeg'
+import TrattamentiVisoAvanzati7 from '/src/assets/estetica_avanzata/trattamenti_viso_avanzati/TrattamentiVisoAvanzati7.jpeg'
+import TrattamentiVisoAvanzati8 from '/src/assets/estetica_avanzata/trattamenti_viso_avanzati/TrattamentiVisoAvanzati8.jpeg'
+import TrattamentiVisoAvanzati9 from '/src/assets/estetica_avanzata/trattamenti_viso_avanzati/TrattamentiVisoAvanzati9.jpeg'
+import TrattamentiVisoAvanzati10 from '/src/assets/estetica_avanzata/trattamenti_viso_avanzati/TrattamentiVisoAvanzati10.jpeg'
+import TrattamentiVisoAvanzati11 from '/src/assets/estetica_avanzata/trattamenti_viso_avanzati/TrattamentiVisoAvanzati11.jpeg'
+
 const gallery: GalleryItem[] = [
-  { src: '/src/assets/estetica_avanzata/trattamenti_viso_avanzati/TrattamentiVisoAvanzati1.jpeg', alt: 'Trattamento 1' },
-  { src: '/src/assets/estetica_avanzata/trattamenti_viso_avanzati/TrattamentiVisoAvanzati2.jpeg', alt: 'Trattamento 2' },
-  { src: '/src/assets/estetica_avanzata/trattamenti_viso_avanzati/TrattamentiVisoAvanzati3.jpeg', alt: 'Trattamento 3' },
-  { src: '/src/assets/estetica_avanzata/trattamenti_viso_avanzati/TrattamentiVisoAvanzati4.jpeg', alt: 'Trattamento 4' },
-  { src: '/src/assets/estetica_avanzata/trattamenti_viso_avanzati/TrattamentiVisoAvanzati5.jpeg', alt: 'Trattamento 5' },
-  { src: '/src/assets/estetica_avanzata/trattamenti_viso_avanzati/TrattamentiVisoAvanzati6.jpeg', alt: 'Trattamento 6' },
-  { src: '/src/assets/estetica_avanzata/trattamenti_viso_avanzati/TrattamentiVisoAvanzati7.jpeg', alt: 'Trattamento 7' },
-  { src: '/src/assets/estetica_avanzata/trattamenti_viso_avanzati/TrattamentiVisoAvanzati8.jpeg', alt: 'Trattamento 8' },
-  { src: '/src/assets/estetica_avanzata/trattamenti_viso_avanzati/TrattamentiVisoAvanzati9.jpeg', alt: 'Trattamento 9' },
-  { src: '/src/assets/estetica_avanzata/trattamenti_viso_avanzati/TrattamentiVisoAvanzati10.jpeg', alt: 'Trattamento 10' },
-  { src: '/src/assets/estetica_avanzata/trattamenti_viso_avanzati/TrattamentiVisoAvanzati11.jpeg', alt: 'Trattamento 11' }
+  { src: TrattamentiVisoAvanzati1, alt: 'Trattamento 1' },
+  { src: TrattamentiVisoAvanzati2, alt: 'Trattamento 2' },
+  { src: TrattamentiVisoAvanzati3, alt: 'Trattamento 3' },
+  { src: TrattamentiVisoAvanzati4, alt: 'Trattamento 4' },
+  { src: TrattamentiVisoAvanzati5, alt: 'Trattamento 5' },
+  { src: TrattamentiVisoAvanzati6, alt: 'Trattamento 6' },
+  { src: TrattamentiVisoAvanzati7, alt: 'Trattamento 7' },
+  { src: TrattamentiVisoAvanzati8, alt: 'Trattamento 8' },
+  { src: TrattamentiVisoAvanzati9, alt: 'Trattamento 9' },
+  { src: TrattamentiVisoAvanzati10, alt: 'Trattamento 10' },
+  { src: TrattamentiVisoAvanzati11, alt: 'Trattamento 11' }
 ];
 
 const lightboxOpen = ref(false);

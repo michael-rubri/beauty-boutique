@@ -113,23 +113,37 @@ import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
 
 type GalleryItem = { src: string; alt: string; }
 
-const heroImage = '/src/assets/estetica_avanzata/trattamenti_corpo_avanzati/TrattamentiCorpoIntro2.jpg';
+import heroImage from '/src/assets/estetica_avanzata/trattamenti_corpo_avanzati/TrattamentiCorpoIntro2.jpg';
 const heroAlt = 'Procedura trattamenti corpo avanzati';
 
+import TrattamentiCorpo1 from '/src/assets/estetica_avanzata/trattamenti_corpo_avanzati/TrattamentiCorpo1.jpeg'
+import TrattamentiCorpo2 from '/src/assets/estetica_avanzata/trattamenti_corpo_avanzati/TrattamentiCorpo2.jpeg'
+import TrattamentiCorpo3 from '/src/assets/estetica_avanzata/trattamenti_corpo_avanzati/TrattamentiCorpo3.jpeg'
+import TrattamentiCorpo4 from '/src/assets/estetica_avanzata/trattamenti_corpo_avanzati/TrattamentiCorpo4.jpeg'
+import TrattamentiCorpo5 from '/src/assets/estetica_avanzata/trattamenti_corpo_avanzati/TrattamentiCorpo5.jpeg'
+import TrattamentiCorpo6 from '/src/assets/estetica_avanzata/trattamenti_corpo_avanzati/TrattamentiCorpo6.jpeg'
+import TrattamentiCorpo7 from '/src/assets/estetica_avanzata/trattamenti_corpo_avanzati/TrattamentiCorpo7.jpeg'
+import TrattamentiCorpo8 from '/src/assets/estetica_avanzata/trattamenti_corpo_avanzati/TrattamentiCorpo8.jpeg'
+import TrattamentiCorpo9 from '/src/assets/estetica_avanzata/trattamenti_corpo_avanzati/TrattamentiCorpo9.jpeg'
+import TrattamentiCorpo10 from '/src/assets/estetica_avanzata/trattamenti_corpo_avanzati/TrattamentiCorpo10.jpeg'
+import TrattamentiCorpo11 from '/src/assets/estetica_avanzata/trattamenti_corpo_avanzati/TrattamentiCorpo11.jpeg'
+import TrattamentiCorpo12 from '/src/assets/estetica_avanzata/trattamenti_corpo_avanzati/TrattamentiCorpo12.jpeg'
+
 const gallery: GalleryItem[] = [
-  { src: '/src/assets/estetica_avanzata/trattamenti_corpo_avanzati/TrattamentiCorpo1.jpeg', alt: 'Trattamento 1' },
-  { src: '/src/assets/estetica_avanzata/trattamenti_corpo_avanzati/TrattamentiCorpo2.jpeg', alt: 'Trattamento 2' },
-  { src: '/src/assets/estetica_avanzata/trattamenti_corpo_avanzati/TrattamentiCorpo3.jpeg', alt: 'Trattamento 3' },
-  { src: '/src/assets/estetica_avanzata/trattamenti_corpo_avanzati/TrattamentiCorpo4.jpeg', alt: 'Trattamento 4' },
-  { src: '/src/assets/estetica_avanzata/trattamenti_corpo_avanzati/TrattamentiCorpo5.jpeg', alt: 'Trattamento 5' },
-  { src: '/src/assets/estetica_avanzata/trattamenti_corpo_avanzati/TrattamentiCorpo6.jpeg', alt: 'Trattamento 6' },
-  { src: '/src/assets/estetica_avanzata/trattamenti_corpo_avanzati/TrattamentiCorpo7.jpeg', alt: 'Trattamento 7' },
-  { src: '/src/assets/estetica_avanzata/trattamenti_corpo_avanzati/TrattamentiCorpo8.jpeg', alt: 'Trattamento 8' },
-  { src: '/src/assets/estetica_avanzata/trattamenti_corpo_avanzati/TrattamentiCorpo9.jpeg', alt: 'Trattamento 9' },
-  { src: '/src/assets/estetica_avanzata/trattamenti_corpo_avanzati/TrattamentiCorpo10.jpeg', alt: 'Trattamento 10' },
-  { src: '/src/assets/estetica_avanzata/trattamenti_corpo_avanzati/TrattamentiCorpo11.jpeg', alt: 'Trattamento 11' },
-  { src: '/src/assets/estetica_avanzata/trattamenti_corpo_avanzati/TrattamentiCorpo12.jpeg', alt: 'Trattamento 12' }
+  { src: TrattamentiCorpo1, alt: 'Trattamento 1' },
+  { src: TrattamentiCorpo2, alt: 'Trattamento 2' },
+  { src: TrattamentiCorpo3, alt: 'Trattamento 3' },
+  { src: TrattamentiCorpo4, alt: 'Trattamento 4' },
+  { src: TrattamentiCorpo5, alt: 'Trattamento 5' },
+  { src: TrattamentiCorpo6, alt: 'Trattamento 6' },
+  { src: TrattamentiCorpo7, alt: 'Trattamento 7' },
+  { src: TrattamentiCorpo8, alt: 'Trattamento 8' },
+  { src: TrattamentiCorpo9, alt: 'Trattamento 9' },
+  { src: TrattamentiCorpo10, alt: 'Trattamento 10' },
+  { src: TrattamentiCorpo11, alt: 'Trattamento 11' },
+  { src: TrattamentiCorpo12, alt: 'Trattamento 12' }
 ];
+
 
 const lightboxOpen = ref(false);
 const currentIndex = ref<number>(0);

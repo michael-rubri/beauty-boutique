@@ -91,15 +91,21 @@ import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
 
 type GalleryItem = { src: string; alt: string; }
 
-const heroImage = '/src/assets/make-up/Make-upIntro.jpg';
+import heroImage from '/src/assets/make-up/Make-upIntro.jpg';
 const heroAlt = 'Strumenti make-up';
 
+import Makeup1 from '/src/assets/make-up/Make-up1.jpeg'
+import Makeup2 from '/src/assets/make-up/Make-up2.jpeg'
+import Makeup3 from '/src/assets/make-up/Make-up3.jpeg'
+import Makeup4 from '/src/assets/make-up/Make-up4.jpeg'
+import Makeup5 from '/src/assets/make-up/Make-up5.jpeg'
+
 const gallery: GalleryItem[] = [
-  { src: '/src/assets/make-up/Make-up1.jpeg', alt: 'Make-up 1' },
-  { src: '/src/assets/make-up/Make-up2.jpeg', alt: 'Make-up 2' },
-  { src: '/src/assets/make-up/Make-up3.jpeg', alt: 'Make-up 3' },
-  { src: '/src/assets/make-up/Make-up4.jpeg', alt: 'Make-up 4' },
-  { src: '/src/assets/make-up/Make-up5.jpeg', alt: 'Make-up 5' },
+  { src: Makeup1, alt: 'Make-up 1' },
+  { src: Makeup2, alt: 'Make-up 2' },
+  { src: Makeup3, alt: 'Make-up 3' },
+  { src: Makeup4, alt: 'Make-up 4' },
+  { src: Makeup5, alt: 'Make-up 5' },
 ];
 
 const lightboxOpen = ref(false);

@@ -95,13 +95,17 @@ import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
 
 type GalleryItem = { src: string; alt: string; }
 
-const heroImage = '/src/assets/estetica_sensoriale/marocco/MaroccoIntro.jpg';
+import heroImage from '/src/assets/estetica_sensoriale/marocco/MaroccoIntro.jpg';
 const heroAlt = 'Rituale marocco';
 
+import RitualeMaroccoImg1 from '/src/assets/estetica_sensoriale/marocco/Marocco1.jpeg'
+import RitualeMaroccoImg2 from '/src/assets/estetica_sensoriale/marocco/Marocco2.jpeg'
+import RitualeMaroccoImg3 from '/src/assets/estetica_sensoriale/marocco/Marocco3.jpeg'
+
 const gallery: GalleryItem[] = [
-  { src: '/src/assets/estetica_sensoriale/marocco/Marocco1.jpeg', alt: 'Percorso 1' },
-  { src: '/src/assets/estetica_sensoriale/marocco/Marocco2.jpeg', alt: 'Percorso 2' },
-  { src: '/src/assets/estetica_sensoriale/marocco/Marocco3.jpeg', alt: 'Percorso 3' },
+  { src: RitualeMaroccoImg1, alt: 'Percorso 1' },
+  { src: RitualeMaroccoImg2, alt: 'Percorso 2' },
+  { src: RitualeMaroccoImg3, alt: 'Percorso 3' },
 ];
 
 const lightboxOpen = ref(false);

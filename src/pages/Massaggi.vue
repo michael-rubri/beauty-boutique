@@ -112,20 +112,31 @@ import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
 
 type GalleryItem = { src: string; alt: string; }
 
-const heroImage = '/src/assets/massaggi/MassaggiIntro.jpeg';
+import heroImage from '/src/assets/massaggi/MassaggiIntro.jpeg';
 const heroAlt = 'Sala massaggi';
 
+import Massaggio1 from '/src/assets/massaggi/Massaggi1.jpeg'
+import Massaggio2 from '/src/assets/massaggi/Massaggi2.jpeg'
+import Massaggio3 from '/src/assets/massaggi/Massaggi3.jpeg'
+import Massaggio4 from '/src/assets/massaggi/Massaggi4.jpeg'
+import Massaggio5 from '/src/assets/massaggi/Massaggi5.jpeg'
+import Massaggio6 from '/src/assets/massaggi/Massaggi6.jpeg'
+import Massaggio7 from '/src/assets/massaggi/Massaggi7.jpeg'
+import Massaggio8 from '/src/assets/massaggi/Massaggi8.jpeg'
+import Massaggio9 from '/src/assets/massaggi/Massaggi9.jpeg'
+import Massaggio10 from '/src/assets/massaggi/Massaggi10.jpeg'
+
 const gallery: GalleryItem[] = [
-  { src: '/src/assets/massaggi/Massaggi1.jpeg', alt: 'Massaggio 1' },
-  { src: '/src/assets/massaggi/Massaggi2.jpeg', alt: 'Massaggio 2' },
-  { src: '/src/assets/massaggi/Massaggi3.jpeg', alt: 'Massaggio 3' },
-  { src: '/src/assets/massaggi/Massaggi4.jpeg', alt: 'Massaggio 4' },
-  { src: '/src/assets/massaggi/Massaggi5.jpeg', alt: 'Massaggio 5' },
-  { src: '/src/assets/massaggi/Massaggi6.jpeg', alt: 'Massaggio 6' },
-  { src: '/src/assets/massaggi/Massaggi7.jpeg', alt: 'Massaggio 7' },
-  { src: '/src/assets/massaggi/Massaggi8.jpeg', alt: 'Massaggio 8' },
-  { src: '/src/assets/massaggi/Massaggi9.jpeg', alt: 'Massaggio 9' },
-  { src: '/src/assets/massaggi/Massaggi10.jpeg', alt: 'Massaggio 10' }
+  { src: Massaggio1, alt: 'Massaggio 1' },
+  { src: Massaggio2, alt: 'Massaggio 2' },
+  { src: Massaggio3, alt: 'Massaggio 3' },
+  { src: Massaggio4, alt: 'Massaggio 4' },
+  { src: Massaggio5, alt: 'Massaggio 5' },
+  { src: Massaggio6, alt: 'Massaggio 6' },
+  { src: Massaggio7, alt: 'Massaggio 7' },
+  { src: Massaggio8, alt: 'Massaggio 8' },
+  { src: Massaggio9, alt: 'Massaggio 9' },
+  { src: Massaggio10, alt: 'Massaggio 10' }
 ];
 
 const lightboxOpen = ref(false);

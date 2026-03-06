@@ -94,13 +94,17 @@ import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
 
 type GalleryItem = { src: string; alt: string; }
 
-const heroImage = '/src/assets/estetica_sensoriale/polinesia/PolinesiaIntro2.jpg';
+import heroImage from '/src/assets/estetica_sensoriale/polinesia/PolinesiaIntro2.jpg';
 const heroAlt = 'Rituale polinesia';
 
+import RitualePolinesiaImg1 from '/src/assets/estetica_sensoriale/polinesia/Polinesia1.jpeg'
+import RitualePolinesiaImg2 from '/src/assets/estetica_sensoriale/polinesia/Polinesia2.jpeg'
+import RitualePolinesiaImg3 from '/src/assets/estetica_sensoriale/polinesia/Polinesia3.jpeg'
+
 const gallery: GalleryItem[] = [
-  { src: '/src/assets/estetica_sensoriale/polinesia/Polinesia1.jpeg', alt: 'Percorso 1' },
-  { src: '/src/assets/estetica_sensoriale/polinesia/Polinesia2.jpeg', alt: 'Percorso 2' },
-  { src: '/src/assets/estetica_sensoriale/polinesia/Polinesia3.jpeg', alt: 'Percorso 3' }
+  { src: RitualePolinesiaImg1, alt: 'Percorso 1' },
+  { src: RitualePolinesiaImg2, alt: 'Percorso 2' },
+  { src: RitualePolinesiaImg3, alt: 'Percorso 3' }
 ];
 
 const lightboxOpen = ref(false);

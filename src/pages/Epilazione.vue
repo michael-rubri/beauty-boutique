@@ -104,14 +104,19 @@ import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
 
 type GalleryItem = { src: string; alt: string; }
 
-const heroImage = '/src/assets/epilazione/EpilazioneIntro.jpg';
+import heroImage from '/src/assets/epilazione/EpilazioneIntro.jpg';
 const heroAlt = 'Procedura epilazione';
 
+import Epilazione1 from '/src/assets/epilazione/Epilazione1.jpeg'
+import Epilazione2 from '/src/assets/epilazione/Epilazione2.jpeg'
+import Epilazione3 from '/src/assets/epilazione/Epilazione3.jpeg'
+import Epilazione4 from '/src/assets/epilazione/Epilazione4.jpeg'
+
 const gallery: GalleryItem[] = [
-  { src: '/src/assets/epilazione/Epilazione1.jpeg', alt: 'Epilazione 1' },
-  { src: '/src/assets/epilazione/Epilazione2.jpeg', alt: 'Epilazione 2' },
-  { src: '/src/assets/epilazione/Epilazione3.jpeg', alt: 'Epilazione 3' },
-  { src: '/src/assets/epilazione/Epilazione4.jpeg', alt: 'Epilazione 4' }
+  { src: Epilazione1, alt: 'Epilazione 1' },
+  { src: Epilazione2, alt: 'Epilazione 2' },
+  { src: Epilazione3, alt: 'Epilazione 3' },
+  { src: Epilazione4, alt: 'Epilazione 4' }
 ];
 
 const lightboxOpen = ref(false);

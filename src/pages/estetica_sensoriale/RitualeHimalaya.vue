@@ -95,13 +95,17 @@ import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
 
 type GalleryItem = { src: string; alt: string; }
 
-const heroImage = '/src/assets/estetica_sensoriale/himalaya/HimalayaIntro.jpeg';
+import heroImage from '/src/assets/estetica_sensoriale/himalaya/HimalayaIntro.jpeg';
 const heroAlt = 'Rituale himalaya';
 
+import RitualeHimalayaImg1 from '/src/assets/estetica_sensoriale/himalaya/Himalaya1.jpeg'
+import RitualeHimalayaImg2 from '/src/assets/estetica_sensoriale/himalaya/Himalaya2.jpeg'
+import RitualeHimalayaImg3 from '/src/assets/estetica_sensoriale/himalaya/Himalaya3.jpeg'
+
 const gallery: GalleryItem[] = [
-  { src: '/src/assets/estetica_sensoriale/himalaya/Himalaya1.jpeg', alt: 'Percorso 1' },
-  { src: '/src/assets/estetica_sensoriale/himalaya/Himalaya2.jpeg', alt: 'Percorso 2' },
-  { src: '/src/assets/estetica_sensoriale/himalaya/Himalaya3.jpeg', alt: 'Percorso 3' }
+  { src: RitualeHimalayaImg1, alt: 'Percorso 1' },
+  { src: RitualeHimalayaImg2, alt: 'Percorso 2' },
+  { src: RitualeHimalayaImg3, alt: 'Percorso 3' }
 ];
 
 const lightboxOpen = ref(false);

@@ -96,14 +96,19 @@ import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
 
 type GalleryItem = { src: string; alt: string; }
 
-const heroImage = '/src/assets/estetica_sensoriale/amazzonia/AmazzoniaIntro.jpg';
+import heroImage from '/src/assets/estetica_sensoriale/amazzonia/AmazzoniaIntro.jpg';
 const heroAlt = 'Rituale amazzonia';
 
+import RitualeAmazzoniaImg1 from '/src/assets/estetica_sensoriale/amazzonia/Amazzonia1.jpeg'
+import RitualeAmazzoniaImg2 from '/src/assets/estetica_sensoriale/amazzonia/Amazzonia2.jpeg'
+import RitualeAmazzoniaImg3 from '/src/assets/estetica_sensoriale/amazzonia/Amazzonia3.jpeg'
+import RitualeAmazzoniaImg4 from '/src/assets/estetica_sensoriale/amazzonia/Amazzonia4.jpeg'
+
 const gallery: GalleryItem[] = [
-  { src: '/src/assets/estetica_sensoriale/amazzonia/Amazzonia1.jpeg', alt: 'Percorso 1' },
-  { src: '/src/assets/estetica_sensoriale/amazzonia/Amazzonia2.jpeg', alt: 'Percorso 2' },
-  { src: '/src/assets/estetica_sensoriale/amazzonia/Amazzonia3.jpeg', alt: 'Percorso 3' },
-  { src: '/src/assets/estetica_sensoriale/amazzonia/Amazzonia4.jpeg', alt: 'Percorso 4' },
+  { src: RitualeAmazzoniaImg1, alt: 'Percorso 1' },
+  { src: RitualeAmazzoniaImg2, alt: 'Percorso 2' },
+  { src: RitualeAmazzoniaImg3, alt: 'Percorso 3' },
+  { src: RitualeAmazzoniaImg4, alt: 'Percorso 4' },
 ];
 
 const lightboxOpen = ref(false);

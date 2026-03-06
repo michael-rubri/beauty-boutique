@@ -72,22 +72,33 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
 
-const heroImage = '/src/assets/beauty_center/BeautyBoutiqueIntro.jpeg';
+import heroImage from '/src/assets/beauty_center/BeautyBoutiqueIntro.jpeg';
 const heroAlt = 'Introduzione centro estetico';
 
 type GalleryItem = { src: string; alt: string; }
 
+import BeautyBoutique1 from '/src/assets/beauty_center/BeautyBoutique1.jpeg'
+import BeautyBoutique2 from '/src/assets/beauty_center/BeautyBoutique2.jpeg'
+import BeautyBoutique3 from '/src/assets/beauty_center/BeautyBoutique3.jpeg'
+import BeautyBoutique4 from '/src/assets/beauty_center/BeautyBoutique4.jpeg'
+import BeautyBoutique5 from '/src/assets/beauty_center/BeautyBoutique5.jpeg'
+import BeautyBoutique6 from '/src/assets/beauty_center/BeautyBoutique6.jpeg'
+import BeautyBoutique7 from '/src/assets/beauty_center/BeautyBoutique7.jpeg'
+import BeautyBoutique8 from '/src/assets/beauty_center/BeautyBoutique8.jpeg'
+import BeautyBoutique9 from '/src/assets/beauty_center/BeautyBoutique9.jpeg'
+import BeautyBoutique10 from '/src/assets/beauty_center/BeautyBoutique10.jpeg'
+
 const gallery: GalleryItem[] = [
-  { src: '/src/assets/beauty_center/BeautyBoutique1.jpeg', alt: 'Beauty center 1' },
-  { src: '/src/assets/beauty_center/BeautyBoutique2.jpeg', alt: 'Beauty center 2' },
-  { src: '/src/assets/beauty_center/BeautyBoutique3.jpeg', alt: 'Beauty center 3' },
-  { src: '/src/assets/beauty_center/BeautyBoutique4.jpeg', alt: 'Beauty center 4' },
-  { src: '/src/assets/beauty_center/BeautyBoutique5.jpeg', alt: 'Beauty center 5' },
-  { src: '/src/assets/beauty_center/BeautyBoutique6.jpeg', alt: 'Beauty center 6' },
-  { src: '/src/assets/beauty_center/BeautyBoutique7.jpeg', alt: 'Beauty center 7' },
-  { src: '/src/assets/beauty_center/BeautyBoutique8.jpeg', alt: 'Beauty center 8' },
-  { src: '/src/assets/beauty_center/BeautyBoutique9.jpeg', alt: 'Beauty center 9' },
-  { src: '/src/assets/beauty_center/BeautyBoutique10.jpeg', alt: 'Beauty center 10' },
+  { src: BeautyBoutique1, alt: 'Beauty center 1' },
+  { src: BeautyBoutique2, alt: 'Beauty center 2' },
+  { src: BeautyBoutique3, alt: 'Beauty center 3' },
+  { src: BeautyBoutique4, alt: 'Beauty center 4' },
+  { src: BeautyBoutique5, alt: 'Beauty center 5' },
+  { src: BeautyBoutique6, alt: 'Beauty center 6' },
+  { src: BeautyBoutique7, alt: 'Beauty center 7' },
+  { src: BeautyBoutique8, alt: 'Beauty center 8' },
+  { src: BeautyBoutique9, alt: 'Beauty center 9' },
+  { src: BeautyBoutique10, alt: 'Beauty center 10' }
 ];
 
 const lightboxOpen = ref(false);

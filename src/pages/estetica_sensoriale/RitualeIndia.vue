@@ -94,13 +94,17 @@ import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
 
 type GalleryItem = { src: string; alt: string; }
 
-const heroImage = '/src/assets/estetica_sensoriale/india/IndiaIntro.jpg';
+import heroImage from '/src/assets/estetica_sensoriale/india/IndiaIntro.jpg';
 const heroAlt = 'Rituale india';
 
+import RitualeIndiaImg1 from '/src/assets/estetica_sensoriale/india/India1.jpeg'
+import RitualeIndiaImg2 from '/src/assets/estetica_sensoriale/india/India2.jpeg'
+import RitualeIndiaImg3 from '/src/assets/estetica_sensoriale/india/India3.jpeg'
+
 const gallery: GalleryItem[] = [
-  { src: '/src/assets/estetica_sensoriale/india/India1.jpeg', alt: 'Percorso 1' },
-  { src: '/src/assets/estetica_sensoriale/india/India2.jpeg', alt: 'Percorso 2' },
-  { src: '/src/assets/estetica_sensoriale/india/India3.jpeg', alt: 'Percorso 3' },
+  { src: RitualeIndiaImg1, alt: 'Percorso 1' },
+  { src: RitualeIndiaImg2, alt: 'Percorso 2' },
+  { src: RitualeIndiaImg3, alt: 'Percorso 3' },
 ];
 
 const lightboxOpen = ref(false);
