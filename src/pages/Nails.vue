@@ -90,13 +90,17 @@ import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
 
 type GalleryItem = { src: string; alt: string; }
 
-const heroImage = '/src/assets/nails/Lampada.png';
+import heroImage from '/src/assets/nails/Lampada.png';
 const heroAlt = 'Mani curate con smalto elegante';
 
+import NailsImg1 from '/src/assets/nails/Nails1.jpeg'
+import NailsImg2 from '/src/assets/nails/Nails2.jpeg'
+import NailsImg3 from '/src/assets/nails/Nails3.jpeg'
+
 const gallery: GalleryItem[] = [
-  { src: '/src/assets/nails/Nails1.jpeg', alt: 'Creazione unghie 1' },
-  { src: '/src/assets/nails/Nails2.jpeg', alt: 'Creazione unghie 2' },
-  { src: '/src/assets/nails/Nails3.jpeg', alt: 'Creazione unghie 3' }
+  { src: NailsImg1, alt: 'Creazione unghie 1' },
+  { src: NailsImg2, alt: 'Creazione unghie 2' },
+  { src: NailsImg3, alt: 'Creazione unghie 3' }
 ];
 
 const lightboxOpen = ref(false);
