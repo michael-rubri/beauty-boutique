@@ -52,11 +52,12 @@ import PressoBeautyImg from '/src/assets/tecnologie/presso_beauty/PressoBeautyIn
 import PressoBeauty from "./PressoBeauty.vue";
 import BeautySensorialShowerImg from '/src/assets/tecnologie/beauty_shower/BeautyShowerIntro.jpeg';
 import BeautySensorialShower from "./BeautySensorialShower.vue";
+import ReshapeRollershapeImg from '/src/assets/tecnologie/reshape_rollershape/ReshapeRollershapeIntro.jpeg';
+import ReshapeRollershape from "./ReshapeRollershape.vue";
 
 type Tecnologia = {
   title: string
   slug: string
-  to: string
   lead: Component
   image: string
   alt: string
@@ -66,7 +67,6 @@ const tecnologie: Tecnologia[] = [
   {
     title: 'Beauty Queen',
     slug: 'beauty-queen',
-    to: '/tecnologie/beauty-queen',
     lead: BeautyQueen,
     image: BeautyQueenImg,
     alt: 'Introduzione Beauty Queen',
@@ -74,7 +74,6 @@ const tecnologie: Tecnologia[] = [
   {
     title: 'Presso Beauty',
     slug: 'presso-beauty',
-    to: '/tecnologie/presso-beauty',
     lead: PressoBeauty,
     image: PressoBeautyImg,
     alt: 'Introduzione Presso Beauty',
@@ -82,10 +81,16 @@ const tecnologie: Tecnologia[] = [
   {
     title: 'Beauty Sensorial Shower',
     slug: 'beauty-sensorial-shower',
-    to: '/tecnologie/beauty-sensorial-shower',
     lead: BeautySensorialShower,
     image: BeautySensorialShowerImg,
-    alt: 'Introduzione Presso Beauty',
+    alt: 'Introduzione Beauty Sensorial Shower',
+  },
+  {
+    title: 'Re Shape & Roller Shape',
+    slug: 'reshape-rollershape',
+    lead: ReshapeRollershape,
+    image: ReshapeRollershapeImg,
+    alt: 'Introduzione Reshape Rollershape',
   }
 ];
 </script>

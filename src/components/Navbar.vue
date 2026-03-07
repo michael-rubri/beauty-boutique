@@ -69,7 +69,7 @@
     </div>
 
     <div v-if="mobileOpen" class="mobile-menu" role="menu" aria-label="Menu mobile">
-      <router-link to="/beauty-boutique" class="mobile-link" @click="mobileOpen = false">Beauty Boutique</router-link>
+      <router-link to="/beauty-center" class="mobile-link" @click="mobileOpen = false">Beauty Boutique</router-link>
 
       <details class="mobile-details">
         <summary>Servizi</summary>

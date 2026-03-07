@@ -22,13 +22,15 @@
     </section>
 
     <section class="mappa">
-      <iframe
-          title="Mappa Beauty Boutique"
-          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2710.33660246475!2d11.636111276215624!3d44.38344567107689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDTCsDIzJzAwLjQiTiAxMcKwMzgnMTkuMyJF!5e1!3m2!1sit!2sit!4v1772143403608!5m2!1sit!2sit"
-          width="600"
-          height="450"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="map-wrapper">
+        <iframe
+            title="Mappa Beauty Boutique"
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2710.33660246475!2d11.636111276215624!3d44.38344567107689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDTCsDIzJzAwLjQiTiAxMcKwMzgnMTkuMyJF!5e1!3m2!1sit!2sit!4v1772143403608!5m2!1sit!2sit"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+        </iframe>
+      </div>
     </section>
 
     <section class="indirizzo">
@@ -96,10 +98,33 @@
 
 .mappa {
   max-width: var(--max-width);
-  width: 500px;
+  width: 600px;
   margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 16px;
 }
 
+.map-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  overflow: hidden;
+  border-radius: var(--radius);
+  box-shadow: 0 6px 18px rgba(17, 17, 17, 0.08);
+  background: #fff;
+}
+
+.map-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+  min-width: 0;
+}
+
+/*
 .mappa iframe {
   width: 100%;
   height: 380px;
@@ -109,6 +134,7 @@
   display: block;
   margin: 0 auto;
 }
+*/
 
 .indirizzo {
   text-align: center;
@@ -117,3 +143,6 @@
   line-height: 1.6;
 }
 </style>
+
+<script setup lang="ts">
+</script>

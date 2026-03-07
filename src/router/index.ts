@@ -21,9 +21,6 @@ import TrattamentiVisoAvanzati from "../pages/estetica_avanzata/TrattamentiVisoA
 import TrattamentiCorpoAvanzati from "../pages/estetica_avanzata/TrattamentiCorpo.vue"
 
 import Tecnologie from "../pages/tecnologie/Tecnologie.vue"
-import BeautyQueen from "../pages/tecnologie/BeautyQueen.vue"
-import PressoBeauty from "../pages/tecnologie/PressoBeauty.vue"
-import BeautySensorialShower from "../pages/tecnologie/BeautySensorialShower.vue";
 
 import Contatti from '../pages/Contatti.vue'
 
@@ -50,9 +47,6 @@ const routes = [
     { path: '/servizi/estetica-avanzata/trattamenti-corpo-avanzati', name: 'Trattamenti Corpo Avanzati', component: TrattamentiCorpoAvanzati },
 
     { path: '/tecnologie', name: 'Tecnologie', component: Tecnologie },
-    { path: '/tecnologie/beauty-queen', name: 'Beauty Queen', component: BeautyQueen },
-    { path: '/tecnologie/presso-beauty', name: 'Presso Beauty', component: PressoBeauty },
-    { path: '/tecnologie/beauty-sensorial-shower', name: 'Beauty Sensorial Shower', component: BeautySensorialShower },
 
     { path: '/contatti', component: Contatti }
 ]
