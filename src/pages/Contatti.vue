@@ -36,7 +36,7 @@
     <section class="indirizzo">
       <h2 class="section-title">Indirizzo</h2>
       <p>
-        Piazza della Libertà<br>
+        Piazza della Libertà 4<br>
         40060 Toscanella di Dozza (BO)<br>
         Bologna
       </p>
