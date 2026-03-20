@@ -520,7 +520,7 @@ const closeButtonRef = ref<HTMLButtonElement | null>(null);
 
 const current = computed(() => {
   const idx = Math.max(0, Math.min(currentIndex.value, gallery.length - 1));
-  return gallery[idx];
+  return gallery[idx] ?? null;
 });
 
 function openLightbox(index: number) {
@@ -599,7 +599,7 @@ function startAutoplay() {
 
   autoplay = window.setInterval(() => {
     nextMobileImage();
-  }, 4000);
+  }, 3000);
 }
 
 function stopAutoplay() {
@@ -679,7 +679,6 @@ onBeforeUnmount(() => {
   window.removeEventListener('keydown', onKey);
   window.removeEventListener('resize', updateIsMobile);
   document.removeEventListener('visibilitychange', handleVisibilityChange);
-
   stopAutoplay();
   unlockScroll();
 });
@@ -810,7 +809,7 @@ onBeforeUnmount(() => {
 
 .mobile-image {
   width: 100%;
-  height: 320px;
+  height: 420px;
   object-fit: cover;
   display: block;
 }
