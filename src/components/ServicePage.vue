@@ -414,7 +414,7 @@ onBeforeUnmount(() => {
   box-sizing: border-box;
 }
 
-.section-text :slotted(.treatment) {
+.section-text :deep(.treatment) {
   font-family: Arapey, Georgia, "Times New Roman", serif;
   font-weight: 650;
   font-size: 18px;

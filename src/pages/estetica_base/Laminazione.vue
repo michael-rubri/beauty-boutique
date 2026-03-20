@@ -74,7 +74,6 @@ const gallery: GalleryItem[] = [
     height: auto;
     overflow: hidden;
     border-radius: 10px;
-    background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
