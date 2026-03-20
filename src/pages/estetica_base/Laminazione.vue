@@ -66,4 +66,16 @@ const gallery: GalleryItem[] = [
   color: #111;
   display: block;
 }
+
+@media (max-width: 520px) {
+  :deep(.mobile-frame) {
+    background: #fff; /* oppure transparent */
+  }
+
+  :deep(.mobile-image) {
+    object-fit: contain;
+    width: 100%;
+    height: 480px;
+  }
+}
 </style>
