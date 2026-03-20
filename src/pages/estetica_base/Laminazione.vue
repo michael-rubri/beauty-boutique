@@ -72,8 +72,8 @@ const gallery: GalleryItem[] = [
     width: min(100%, 360px);
     aspect-ratio: 1 / 1;
     height: auto;
-    overflow: visible;
-    border-radius: 0;
+    overflow: hidden;
+    border-radius: 10px;
     background: transparent;
     display: flex;
     align-items: center;
