@@ -809,7 +809,7 @@ onBeforeUnmount(() => {
 
 .mobile-image {
   width: 100%;
-  height: 420px;
+  height: 480px;
   object-fit: cover;
   display: block;
 }
