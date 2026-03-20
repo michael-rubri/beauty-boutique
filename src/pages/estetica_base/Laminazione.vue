@@ -68,14 +68,31 @@ const gallery: GalleryItem[] = [
 }
 
 @media (max-width: 520px) {
+  :deep(.mobile-carousel) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   :deep(.mobile-frame) {
-    background: #fff; /* oppure transparent */
+    width: min(100%, 360px);
+    aspect-ratio: 1 / 1;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #f7f3f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
   }
 
   :deep(.mobile-image) {
-    object-fit: contain;
     width: 100%;
-    height: 480px;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    display: block;
   }
 }
 </style>
