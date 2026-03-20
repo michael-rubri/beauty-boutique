@@ -935,9 +935,5 @@ onBeforeUnmount(() => {
   .hero-heading {
     font-size: 24px;
   }
-
-  .mobile-image {
-    height: 220px;
-  }
 }
 </style>
