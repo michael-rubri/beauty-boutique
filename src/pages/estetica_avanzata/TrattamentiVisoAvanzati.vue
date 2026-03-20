@@ -108,9 +108,9 @@ import trattamentiVisoVideo from '/src/assets/estetica_avanzata/trattamenti_viso
 
 import TrattamentiVisoAvanzati1 from '/src/assets/estetica_avanzata/trattamenti_viso_avanzati/TrattamentiVisoAvanzati1.jpeg';
 import TrattamentiVisoAvanzati2 from '/src/assets/estetica_avanzata/trattamenti_viso_avanzati/TrattamentiVisoAvanzati2.jpeg';
-import TrattamentiVisoAvanzati3 from '/src/assets/estetica_avanzata/trattamenti_viso_avanzati/TrattamentiVisoAvanzati3.jpeg';
+/*import TrattamentiVisoAvanzati3 from '/src/assets/estetica_avanzata/trattamenti_viso_avanzati/TrattamentiVisoAvanzati3.jpeg';
 import TrattamentiVisoAvanzati4 from '/src/assets/estetica_avanzata/trattamenti_viso_avanzati/TrattamentiVisoAvanzati4.jpeg';
-import TrattamentiVisoAvanzati5 from '/src/assets/estetica_avanzata/trattamenti_viso_avanzati/TrattamentiVisoAvanzati5.jpeg';
+import TrattamentiVisoAvanzati5 from '/src/assets/estetica_avanzata/trattamenti_viso_avanzati/TrattamentiVisoAvanzati5.jpeg';*/
 import TrattamentiVisoAvanzati6 from '/src/assets/estetica_avanzata/trattamenti_viso_avanzati/TrattamentiVisoAvanzati6.jpeg';
 import TrattamentiVisoAvanzati7 from '/src/assets/estetica_avanzata/trattamenti_viso_avanzati/TrattamentiVisoAvanzati7.jpeg';
 import TrattamentiVisoAvanzati8 from '/src/assets/estetica_avanzata/trattamenti_viso_avanzati/TrattamentiVisoAvanzati8.jpeg';
@@ -121,9 +121,9 @@ import TrattamentiVisoAvanzati11 from '/src/assets/estetica_avanzata/trattamenti
 const gallery: GalleryItem[] = [
   { src: TrattamentiVisoAvanzati1, alt: 'Trattamento 1' },
   { src: TrattamentiVisoAvanzati2, alt: 'Trattamento 2' },
-  { src: TrattamentiVisoAvanzati3, alt: 'Trattamento 3' },
+  /*{ src: TrattamentiVisoAvanzati3, alt: 'Trattamento 3' },
   { src: TrattamentiVisoAvanzati4, alt: 'Trattamento 4' },
-  { src: TrattamentiVisoAvanzati5, alt: 'Trattamento 5' },
+  { src: TrattamentiVisoAvanzati5, alt: 'Trattamento 5' },*/
   { src: TrattamentiVisoAvanzati6, alt: 'Trattamento 6' },
   { src: TrattamentiVisoAvanzati7, alt: 'Trattamento 7' },
   { src: TrattamentiVisoAvanzati8, alt: 'Trattamento 8' },

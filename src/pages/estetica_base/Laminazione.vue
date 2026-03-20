@@ -44,16 +44,16 @@ import Laminazione1 from '/src/assets/laminazione/Laminazione1.jpeg';
 import Laminazione2 from '/src/assets/laminazione/Laminazione2.jpeg';
 import Laminazione3 from '/src/assets/laminazione/Laminazione3.jpeg';
 import Laminazione4 from '/src/assets/laminazione/Laminazione4.jpeg';
-import Laminazione5 from '/src/assets/laminazione/Laminazione5.jpeg';
-import Laminazione6 from '/src/assets/laminazione/Laminazione6.jpeg';
+/*import Laminazione5 from '/src/assets/laminazione/Laminazione5.jpeg';
+import Laminazione6 from '/src/assets/laminazione/Laminazione6.jpeg';*/
 
 const gallery: GalleryItem[] = [
   { src: Laminazione1, alt: 'Laminazione 1' },
   { src: Laminazione2, alt: 'Laminazione 2' },
   { src: Laminazione3, alt: 'Laminazione 3' },
   { src: Laminazione4, alt: 'Laminazione 4' },
-  { src: Laminazione5, alt: 'Laminazione 5' },
-  { src: Laminazione6, alt: 'Laminazione 6' }
+  /*{ src: Laminazione5, alt: 'Laminazione 5' },
+  { src: Laminazione6, alt: 'Laminazione 6' }*/
 ];
 </script>
 
