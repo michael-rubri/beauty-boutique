@@ -2,11 +2,11 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../pages/Home.vue'
 import BeautyCenter from '../pages/BeautyCenter.vue'
 
-import Nails from '../pages/Nails.vue'
-import Epilazione from "../pages/Epilazione.vue"
-import Massaggi from "../pages/Massaggi.vue"
-import Laminazione from "../pages/Laminazione.vue"
-import MakeUp from "../pages/MakeUp.vue"
+import Nails from '../pages/estetica_base/Nails.vue'
+import Epilazione from "../pages/estetica_base/Epilazione.vue"
+import Massaggi from "../pages/estetica_base/Massaggi.vue"
+import Laminazione from "../pages/estetica_base/Laminazione.vue"
+import MakeUp from "../pages/estetica_base/MakeUp.vue"
 
 import EsteticaSensoriale from "../pages/estetica_sensoriale/EsteticaSensoriale.vue"
 import RitualeHimalaya from "../pages/estetica_sensoriale/RitualeHimalaya.vue"
