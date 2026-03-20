@@ -132,3 +132,27 @@ const gallery: GalleryItem[] = [
   { src: TrattamentiVisoAvanzati11, alt: 'Trattamento 11' }
 ];
 </script>
+
+<style scoped>
+@media (max-width: 520px) {
+  :deep(.mobile-frame) {
+    width: min(100%, 360px);
+    aspect-ratio: 1 / 1;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  :deep(.mobile-image) {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    display: block;
+  }
+}
+</style>
