@@ -405,7 +405,12 @@ function unlockScroll() {
             class="mobile-carousel"
             aria-label="Galleria mobile"
         >
-          <div class="mobile-frame">
+          <div
+              class="mobile-frame"
+              @touchstart="onTouchStart"
+              @touchmove="onTouchMove"
+              @touchend="onTouchEnd"
+          >
             <img
                 v-if="currentMobile"
                 :src="currentMobile.src"
@@ -518,11 +523,6 @@ const current = computed(() => {
   return gallery[idx];
 });
 
-const currentMobile = computed(() => {
-  const idx = Math.max(0, Math.min(mobileIndex.value, gallery.length - 1));
-  return gallery[idx];
-});
-
 function openLightbox(index: number) {
   if (isMobile.value) return;
   currentIndex.value = index;
@@ -558,8 +558,16 @@ function onKey(e: KeyboardEvent) {
 /* Mobile carousel */
 const isMobile = ref(false);
 const mobileIndex = ref(0);
-let mediaQuery: MediaQueryList | null = null;
 let autoplay: number | null = null;
+
+const currentMobile = computed(() => {
+  const idx = Math.max(0, Math.min(mobileIndex.value, gallery.length - 1));
+  return gallery[idx] ?? null;
+});
+
+const touchStartX = ref<number | null>(null);
+const touchCurrentX = ref<number | null>(null);
+const swipeThreshold = 50;
 
 function updateIsMobile() {
   isMobile.value = window.innerWidth <= 520;
@@ -575,6 +583,10 @@ function updateIsMobile() {
 function goToMobileImage(index: number) {
   mobileIndex.value = index;
   restartAutoplay();
+}
+
+function prevMobileImage() {
+  mobileIndex.value = (mobileIndex.value - 1 + gallery.length) % gallery.length;
 }
 
 function nextMobileImage() {
@@ -612,6 +624,39 @@ function handleVisibilityChange() {
   }
 }
 
+function onTouchStart(e: TouchEvent) {
+  if (!isMobile.value) return;
+  touchStartX.value = e.touches[0]?.clientX ?? null;
+  touchCurrentX.value = null;
+}
+
+function onTouchMove(e: TouchEvent) {
+  if (!isMobile.value || touchStartX.value === null) return;
+  touchCurrentX.value = e.touches[0]?.clientX ?? null;
+}
+
+function onTouchEnd() {
+  if (!isMobile.value || touchStartX.value === null || touchCurrentX.value === null) {
+    touchStartX.value = null;
+    touchCurrentX.value = null;
+    return;
+  }
+
+  const deltaX = touchStartX.value - touchCurrentX.value;
+
+  if (Math.abs(deltaX) >= swipeThreshold) {
+    if (deltaX > 0) {
+      nextMobileImage();
+    } else {
+      prevMobileImage();
+    }
+    restartAutoplay();
+  }
+
+  touchStartX.value = null;
+  touchCurrentX.value = null;
+}
+
 /* Scroll lock */
 function lockScroll() {
   document.documentElement.style.overflow = 'hidden';
@@ -627,8 +672,6 @@ onMounted(() => {
   window.addEventListener('keydown', onKey);
   window.addEventListener('resize', updateIsMobile);
   document.addEventListener('visibilitychange', handleVisibilityChange);
-
-  mediaQuery = window.matchMedia('(max-width: 520px)');
   updateIsMobile();
 });
 
@@ -762,6 +805,7 @@ onBeforeUnmount(() => {
   width: 100%;
   overflow: hidden;
   border-radius: 10px;
+  touch-action: pan-y;
 }
 
 .mobile-image {
