@@ -135,6 +135,7 @@ const props = defineProps<{
   category: string;
   title: string;
   subtitle: string;
+  heroTitle?: string;
   heroImage: string;
   heroAlt: string;
   gallery: GalleryItem[];
@@ -414,6 +415,36 @@ onBeforeUnmount(() => {
   box-sizing: border-box;
 }
 
+.section-text :deep(p) {
+  margin: 0 0 16px;
+}
+
+.section-text :deep(.service-inline-video) {
+  width: 100%;
+  max-width: 360px;
+  margin: 2.5rem auto;
+  display: block;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  background: #fdf9f8;
+}
+
+.section-text :deep(.service-inline-video:focus) {
+  outline: 3px solid #e8b7c8;
+  outline-offset: 4px;
+}
+
+.section-text :deep(ul) {
+  margin: 12px 0 24px;
+  padding-left: 1.25rem;
+  text-align: center;
+}
+
+.section-text :deep(li + li) {
+  margin-top: 6px;
+}
+
 .section-text :deep(.treatment) {
   font-family: Arapey, Georgia, "Times New Roman", serif;
   font-weight: 650;
@@ -597,6 +628,13 @@ onBeforeUnmount(() => {
 
   .thumb-image {
     height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-text :deep(.service-inline-video) {
+    border-radius: 12px;
+    margin: 1.8rem auto;
   }
 }
 
