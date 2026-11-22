@@ -47,13 +47,15 @@
 import type { Component } from 'vue';
 
 import BeautyQueenImg from '/src/assets/tecnologie/beauty_queen/BeautyQueenIntro.jpeg';
-import BeautyQueen from "./BeautyQueen.vue";
+import BeautyQueen from './BeautyQueen.vue';
 import PressoBeautyImg from '/src/assets/tecnologie/presso_beauty/PressoBeautyIntro.jpeg';
-import PressoBeauty from "./PressoBeauty.vue";
+import PressoBeauty from './PressoBeauty.vue';
 import BeautySensorialShowerImg from '/src/assets/tecnologie/beauty_shower/BeautyShowerIntro.jpeg';
-import BeautySensorialShower from "./BeautySensorialShower.vue";
+import BeautySensorialShower from './BeautySensorialShower.vue';
 import ReshapeRollershapeImg from '/src/assets/tecnologie/reshape_rollershape/ReshapeRollershapeIntro.jpeg';
-import ReshapeRollershape from "./ReshapeRollershape.vue";
+import ReshapeRollershape from './ReshapeRollershape.vue';
+import LipoLaserImg from '/src/assets/tecnologie/lipo_laser/LipoLaserIntro.jpeg';
+import LipoLaser from './LipoLaser.vue';
 
 type Tecnologia = {
   title: string
@@ -91,6 +93,13 @@ const tecnologie: Tecnologia[] = [
     lead: ReshapeRollershape,
     image: ReshapeRollershapeImg,
     alt: 'Introduzione Reshape Rollershape',
+  },
+  {
+    title: 'Lipo Laser',
+    slug: 'lipo-laser',
+    lead: LipoLaser,
+    image: LipoLaserImg,
+    alt: 'Introduzione Lipo Laser',
   }
 ];
 </script>
